@@ -1,2 +1,5 @@
 FROM ubuntu 14:04
-ENV comamd ="useradd"
+ENV comnd ="useradd"
+RUN $ comnd chandu123
+RUN apt-get update -y
+
