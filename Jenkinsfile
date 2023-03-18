@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage{
+        stage(" greetings"){
             sh "hello"
         }
         stage("docker build"){
