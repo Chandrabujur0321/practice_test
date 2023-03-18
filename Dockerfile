@@ -1,8 +1,8 @@
 FROM ubuntu 14:04
 ENV comnd ="useradd"
+WORKDIR /etc
 RUN $ comnd chandu123
 RUN apt-get update -y
-CMD [python]
-WORKDIR /etc
-RUN apt-get install -y
+
+
 
