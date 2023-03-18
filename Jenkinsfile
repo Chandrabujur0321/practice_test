@@ -2,10 +2,14 @@ pipeline{
     agent any
     stages{
         stage(" greetings"){
-            sh "hello"
+              steps {
+                echo 'Building..'
+            }
         }
         stage("docker build"){
+            stepes{
             sh "docker build -t test ."
+            }
         }
 }
 }
